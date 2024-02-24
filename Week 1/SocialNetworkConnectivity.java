@@ -15,7 +15,7 @@ class SocialNetworkConnectivity {
 
       if (!uf.connected(member1, member2)) {
         uf.union(member1, member2);
-        if (uf.getComponents() == 1) {
+        if (uf.getComponents() == 1) { // number of disconnected components is 1
           return timestamp;
         }
       }
